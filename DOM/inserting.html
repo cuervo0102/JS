@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting</title>
+</head>
+<body>
+    
+    <div id="container">
+
+    </div>
+
+
+
+
+    <script>
+        let container = document.getElementById('container')
+
+        //create new element
+        newParagrph = document.createElement('p')
+
+        //fill the para
+        newParagrph.innerHTML = '<b>Hey JavaScript</b>';
+
+        //append it to end 
+        container.appendChild(newParagrph)
+
+        //insertBefore ++ firstchild
+        let h1 = document.createElement('h1')
+        container.insertBefore(h1, container.firstChild)
+        h1.innerHTML = '<h1>Hello HTML</h1>'
+
+        //Inserts an element in a specific position
+        let hr = document.createElement('hr')
+        let hr1 = document.createElement('hr')
+        container.insertAdjacentElement("beforebegin", hr)
+        container.insertAdjacentElement("afterend", hr1)
+        let input = document.createElement('button')
+        container.insertAdjacentElement('afterbegin', input)
+        input.textContent = 'Button1'
+
+        let input2 = document.createElement('button')
+        container.insertAdjacentElement('beforeend', input2)
+        input2.textContent = 'Button2'        
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing</title>
+</head>
+
+<Style>
+    .div{
+        background-color: aquamarine;
+
+
+    }
+</Style>
+
+
+<body>
+    <div class="div">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Eligendi velit quis maiores illo. 
+            Nesciunt ad amet nihil neque, corrupti in quibusdam hic laborum, 
+            obcaecati autem quae quaerat eaque quisquam facilis.
+        </p>
+        <button type="submit">Test</button>
+    </div>
+
+
+    <script>
+        let div = document.getElementsByClassName('div')[0]
+        let paragraph = div.querySelector('p');
+        div.removeChild(paragraph);
+        div.remove()
+    </script>
+</body>
+</html>

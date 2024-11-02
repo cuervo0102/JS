@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting</title>
+
+
+    <style>
+
+        p{
+            color: red;
+        }
+
+        div{
+            color: rgb(116, 76, 18);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>First Header</h1>
+        <h1>Second Header</h1>
+        <h1>Third Header</h1>
+
+
+        <div class="square">
+            <p>My square</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        //ID
+        let container = document.getElementById('container');
+
+        //Class Name select all the elements within specific class 
+        container  = document.getElementsByClassName('square');
+
+
+        //Tag name returns all the elements with specific tag name 
+        container = document.getElementsByTagName('h1')
+
+        //QuerySelector first Element
+        container = document.querySelector('p')
+
+        //return list 
+        container = document.querySelectorAll('div > p')
+        console.log(container)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Counter</title>
+</head>
+<body>
+    <script>
+        function charCounter(myString, myChar) {
+            let howMany = 0;
+            for (let i = 0; i < myString.length; i++) {
+                if (myString[i] === myChar) {
+                    howMany += 1;
+                }
+            }
+            return howMany; 
+        }
+
+
+        let count = charCounter('saham', 'a');
+
+        alert("The character 'i' appears " + count + " time(s) in 'siham'.");
+    </script>
+</body>
+</html>

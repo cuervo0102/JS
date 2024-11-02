@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name: <input type="text" id="name">
+    <button type="button" id="submitButton">Submit</button>
+    
+    <p id="output"></p> 
+
+    <script>
+        const submitting = () => {
+            
+            let name = document.getElementById('name').value;
+
+        
+            let pattern = /^[A-Z][a-z]+$/; 
+
+
+            if (pattern.test(name)) {
+                document.getElementById('output').innerHTML = `Entered Name: ${name}`;
+            } else {
+                alert('Enter a valid name (only lowercase letters are allowed)');
+            }
+        }
+
+        document.getElementById('submitButton').addEventListener('click', submitting);
+    </script>
+</body>
+</html>

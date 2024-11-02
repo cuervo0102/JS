@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Array Elements</title>
+</head>
+<body>
+    <script>
+        let sum_nbr = 0;
+        let array = [1, 2, 3, 4];
+
+        function sumArray(array) {
+            for (let i = 0; i < array.length; i++) {
+                sum_nbr += array[i];
+            }
+            alert("The sum of the array is: " + sum_nbr);
+        }
+
+        sumArray(array);
+    </script>
+</body>
+</html>

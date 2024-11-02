@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Element</title>
+</head>
+<body>
+    <div id="container">
+        <button type="button" id="createButton">Create New Element</button>
+    </div>
+
+    <script>
+        
+        let button = document.getElementById('createButton');
+
+        button.addEventListener('click', () => {
+            let title = document.createElement('h1');
+            title.textContent = 'Hey'; 
+            title.style.color = 'red'; 
+
+            let container = document.getElementById('container');
+
+            container.appendChild(title);
+        });
+    </script>
+</body>
+</html>

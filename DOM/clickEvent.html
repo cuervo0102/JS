@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickEvent</title>
+</head>
+<body>
+    
+    <button id="button" onclick="testClick()">
+        ClickMe
+    </button>
+    <div id="container">
+
+    </div>
+
+    <script>
+        function testClick(){
+            let container = document.getElementById("container")
+            let button = document.getElementById("button")
+
+            let message = document.createElement("p")
+            container.appendChild(message)
+            message.innerHTML = '<b>Hey im working</b>'
+        }
+    </script>
+</body>
+</html>
